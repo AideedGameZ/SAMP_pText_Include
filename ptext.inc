@@ -52,3 +52,9 @@ stock pText_Float( string1[], Float:float ){
 	format(ptext_string,sizeof(mytext_string), "%s%f", string1[], float);
 	return ptext_string;
 }
+
+stock pName(playerid){
+	new name[MAX_PLAYER_NAME+1];
+	GetPlayerName(playerid,name,sizeof(name));
+	return name;
+}

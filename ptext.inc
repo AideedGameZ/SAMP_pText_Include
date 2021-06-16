@@ -58,3 +58,9 @@ stock pName(playerid){
 	GetPlayerName(playerid,name,sizeof(name));
 	return name;
 }
+
+stock pText_Array(text[], array){
+	new ptext_input[512];
+	format(ptext_input,sizeof(ptext_input), "%s[%d]", text,array);
+	return ptext_input;
+}

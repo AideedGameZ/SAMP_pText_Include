@@ -65,8 +65,8 @@ stock pName(playerid){
 	return name;
 }
 
-stock pText_Array(text[], array){
+stock pText_Dimension(text[], dimension){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s[%d]", text,array);
+	format(ptext_input,sizeof(ptext_input), "%s[%d]", text,dimension);
 	return ptext_input;
 }

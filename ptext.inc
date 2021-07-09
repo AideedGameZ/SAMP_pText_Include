@@ -70,3 +70,49 @@ stock pText_Dimension(text[], dimension){
 	format(ptext_input,sizeof(ptext_input), "%s[%d]", text,dimension);
 	return ptext_input;
 }
+
+stock pI( integer ){
+	new ptext_input[512];
+	format(ptext_string,sizeof(ptext_string), "%d", integer);
+	return ptext_string;
+}
+
+stock pF( Float:float){
+	new ptext_input[512];
+	format(ptext_string,sizeof(ptext_string), "%f", float);
+	return ptext_string;
+}
+
+stock pT( string[] ){
+	return string;
+}
+
+stock pTT( string1[], string2[] ){
+	new ptext_input[512];
+	format(ptext_string,sizeof(ptext_string), "%s%s", string1[], string2[]);
+	return ptext_string;
+}
+
+stock pTI( string1[], integer ){
+	new ptext_input[512];
+	format(ptext_string,sizeof(mytext_string), "%s%d", string1[], integer);
+	return ptext_string;
+}
+
+stock pTF( string1[], Float:float ){
+	new ptext_input[512];
+	format(ptext_string,sizeof(mytext_string), "%s%f", string1[], float);
+	return ptext_string;
+}
+
+stock pN(playerid){
+	new name[MAX_PLAYER_NAME+1];
+	GetPlayerName(playerid,name,sizeof(name));
+	return name;
+}
+
+stock pTD(text[], dimension){
+	new ptext_input[512];
+	format(ptext_input,sizeof(ptext_input), "%s[%d]", text,dimension);
+	return ptext_input;
+}

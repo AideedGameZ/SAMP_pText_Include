@@ -43,7 +43,7 @@ stock pText_2( string1[], string2[] ){
 
 stock pText_Text( string1[], string2[] ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%s", string1, string2[]);
+	format(ptext_input,sizeof(ptext_input), "%s%s", string1, string2);
 	return ptext_input;
 }
 

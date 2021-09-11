@@ -37,25 +37,25 @@ stock pText( string[] ){
 
 stock pText_2( string1[], string2[] ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%s", string1[], string2[]);
+	format(ptext_input,sizeof(ptext_input), "%s%s", string1, string2);
 	return ptext_input;
 }
 
 stock pText_Text( string1[], string2[] ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%s", string1[], string2[]);
+	format(ptext_input,sizeof(ptext_input), "%s%s", string1, string2[]);
 	return ptext_input;
 }
 
 stock pText_Int( string1[], integer ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%d", string1[], integer);
+	format(ptext_input,sizeof(ptext_input), "%s%d", string1, integer);
 	return ptext_input;
 }
 
 stock pText_Float( string1[], Float:float ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%f", string1[], float);
+	format(ptext_input,sizeof(ptext_input), "%s%f", string1, float);
 	return ptext_input;
 }
 
@@ -89,19 +89,19 @@ stock pT( string[] ){
 
 stock pTT( string1[], string2[] ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%s", string1[], string2[]);
+	format(ptext_input,sizeof(ptext_input), "%s%s", string1, string2);
 	return ptext_input;
 }
 
 stock pTI( string1[], integer ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%d", string1[], integer);
+	format(ptext_input,sizeof(ptext_input), "%s%d", string1, integer);
 	return ptext_input;
 }
 
 stock pTF( string1[], Float:float ){
 	new ptext_input[512];
-	format(ptext_input,sizeof(ptext_input), "%s%f", string1[], float);
+	format(ptext_input,sizeof(ptext_input), "%s%f", string1, float);
 	return ptext_input;
 }
 

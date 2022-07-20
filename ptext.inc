@@ -99,6 +99,43 @@ stock pTT( string1[], string2[] ){
 	return ptext_input;
 }
 
+stock pTTT(string1[], string2[], string3[]){
+	new ptext_input[512];
+	format(ptext_input,sizeof(ptext_input), "%s%s%s",string1, string2, string3);
+	return ptext_input;
+}
+
+stock pTTTT(string1[], string2[], string3[], string4[]){
+	new ptext_input[512];
+	format(ptext_input,sizeof(ptext_input), "%s%s%s%s",string1, string2, string3, string4);
+	return ptext_input;
+}
+
+stock pTTTTT(string1[], string2[], string3[], string4[], string5[]){
+	new ptext_input[512];
+	format(ptext_input,sizeof(ptext_input), "%s%s%s%s%s",string1, string2, string3, string4, string5);
+	return ptext_input;
+}
+
+stock pT2(string1[], string2[]){
+	return pTT(string1, string2);
+}
+
+
+stock pT3(string1[], string2[], string3[]){
+	return pTTT(string1, string2, string3);
+}
+
+
+stock pT4(string1[], string2[], string3[], string4[]){
+	return pTTTT(string1, string2, string3, string4);
+}
+
+
+stock pT5(string1[], string2[], string3[], string4[], string5[]){
+	return pTTTTT(string1, string2, string3, string4, string5);
+}
+
 stock pTI( string1[], integer ){
 	new ptext_input[512];
 	format(ptext_input,sizeof(ptext_input), "%s%d", string1, integer);

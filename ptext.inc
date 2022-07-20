@@ -13,7 +13,7 @@
 main()
 {
 	print("\n----------------------------------");
-	print(" Using P-Text Include!!");
+	print(" Using P-Text Include by AideedGameZ!!");
 	print("----------------------------------\n");
 }
 
@@ -68,6 +68,12 @@ stock pName(playerid){
 stock pText_Dimension(text[], dimension){
 	new ptext_input[512];
 	format(ptext_input,sizeof(ptext_input), "%s[%d]", text,dimension);
+	return ptext_input;
+}
+
+stock pText_2_Dimension(text[], dimension[]){
+	new ptext_input[512];
+	format(ptext_input, sizeof(ptext_input), "%s[%s]", text,dimension);
 	return ptext_input;
 }
 
